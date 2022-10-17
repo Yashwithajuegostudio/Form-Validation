@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <script src="/js/Validation.js"></script>
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <form name="form">
+        <h1 class="heading">Form</h1>
+        <!-- email inputbox -->
+        <label for="email">Email</label>
+        <input
+          class="input"
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <!-- Mobile number inputbox -->
+        <label for="mobile">Mobile Number</label>
+        <input
+          class="input"
+          type="number"
+          id="mobile"
+          name="mobile"
+          placeholder="Enter your mobile number"
+          required
+        />
+        <!-- password input box -->
+        <label for="password">Password</label>
+        <input
+          class="input"
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your Password"
+          required
+        />
+        <div class="submit-button">
+          <button class="btn" type="submit" onclick="validateForm()">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
